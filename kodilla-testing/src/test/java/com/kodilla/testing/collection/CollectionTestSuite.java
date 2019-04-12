@@ -24,13 +24,15 @@ public class CollectionTestSuite {
 		//Given
 		OddNumbersExterminator testCase1List = new OddNumbersExterminator();
 		//When
-		ArrayList<Integer> testList1 = new ArrayList<Integer>()
+		ArrayList<Integer> testList1 = new ArrayList<Integer>();
 		testEvenList = testCase1List.exterminate(testList1);
 		//Then
-		if () {
-			System.out.println("Test case 1 passed");
-		} else {
-			System.out.println("Error! Test case1 failed");
+		for(int testing : testEvenList) {
+			if(testing % 2 == 0) {
+				System.out.println("Test 1 passed");
+			} else {
+				System.out.println("Error! Test 1 failed");
+			}
 		}
 	}
 	@Test
@@ -46,10 +48,12 @@ public class CollectionTestSuite {
 		}
 		testEvenList = testCase2List.exterminate(testList2);
 		//Then
-		if () {
-			System.out.println("Test case 2 passed");
-		} else {
-			System.out.println("Error! Test case 2 failed");
+		for(int testing : testEvenList) {
+			if(testing % 2 == 0) {
+				System.out.println("Test 2 passed");
+			} else {
+				System.out.println("Error! Test 2 failed");
+			}
 		}
 	}
 }
