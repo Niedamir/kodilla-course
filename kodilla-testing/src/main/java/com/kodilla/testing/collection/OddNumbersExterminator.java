@@ -1,6 +1,6 @@
 package com.kodilla.testing.collection;
 
-import java.util.ArrayList;
+import java.util.*;
 
 class OddNumbersExterminator {
 	private int i = 0;
