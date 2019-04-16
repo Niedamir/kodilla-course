@@ -30,7 +30,6 @@ public class ShapeCollectorTestSuite {
 		//Then
 		Assert.assertEquals(1, testCollection.getFiguresQuantity());
 	}
-
 	@Test //#2
 	public void testRemoveFigure() {
 		//Given
@@ -38,12 +37,10 @@ public class ShapeCollectorTestSuite {
 		Square square = new Square(5.5);
 		testCollection.addFigure(square);
 		//When
-		int tempQuantity = testCollection.getFiguresQuantity();
 		testCollection.removeFigure(square);
 		//Then
-		Assert.assertEquals(tempQuantity - 1, testCollection.getFiguresQuantity());
+		Assert.assertEquals(0, testCollection.getFiguresQuantity());
 	}
-
 	@Test //#3
 	public void testGetFigure() {
 		//Given
@@ -51,8 +48,20 @@ public class ShapeCollectorTestSuite {
 		Square square = new Square(5.5);
 		testCollection.addFigure(square);
 		//When
-		String gettedFigure = testCollection.getFigure(0);
+		Shape outputFigure = testCollection.getFigure(0);
 		//Then
-		Assert.assertEquals(square.toString(), gettedFigure);
+		Assert.assertEquals(square, outputFigure);
+	}
+	@Test //#4
+	public void testShowFigure() {
+		//Given
+		ShapeCollector testCollection = new ShapeCollector();
+		Square square = new Square(2);
+		testCollection.addFigure(square);
+		String expectedString = "Name: Square Field: 4.0";
+		//When
+		String outputFigure = testCollection.showFigure(0);
+		//Then
+		Assert.assertEquals(expectedString, outputFigure);
 	}
 }
