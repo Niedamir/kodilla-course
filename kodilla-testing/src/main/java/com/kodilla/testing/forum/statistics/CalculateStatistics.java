@@ -6,9 +6,9 @@ public class CalculateStatistics {
 	int users = 0;
 	int posts = 0;
 	int comments = 0;
-	double postPerUser = 0;
-	double commentsPerUser = 0;
-	double commentsPerPost = 0;
+	int postPerUser = 0;
+	int commentsPerUser = 0;
+	int commentsPerPost = 0;
 
 	public void calculateAdvStatistics(Statistics statistics) {
 		List<String> usersList = statistics.usersNames();
@@ -43,13 +43,13 @@ public class CalculateStatistics {
 	public int getComments() {
 		return comments;
 	}
-	public double getPostPerUser() {
+	public int getPostPerUser() {
 		return postPerUser;
 	}
-	public double getCommentsPerUser() {
+	public int getCommentsPerUser() {
 		return commentsPerUser;
 	}
-	public double getCommentsPerPost() {
+	public int getCommentsPerPost() {
 		return commentsPerPost;
 	}
 }

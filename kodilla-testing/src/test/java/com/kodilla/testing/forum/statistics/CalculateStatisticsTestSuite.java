@@ -49,8 +49,8 @@ public class CalculateStatisticsTestSuite {
 		Assert.assertEquals(100, processor.getUsers());
 		Assert.assertEquals(0, processor.getPosts());
 		Assert.assertEquals(5, processor.getComments());
-		Assert.assertEquals(0, processor.getPostPerUser(), 0.001);
-		Assert.assertEquals(0.05, processor.getCommentsPerUser(),0.001);
-		Assert.assertEquals(0, processor.getCommentsPerPost(), 0.001);
+		Assert.assertEquals(0, processor.getPostPerUser());
+		Assert.assertEquals(0, processor.getCommentsPerUser());
+		Assert.assertEquals(0, processor.getCommentsPerPost());
 	}
 }
