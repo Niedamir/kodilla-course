@@ -1,13 +1,16 @@
 package com.kodilla.testing.collection;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.*;
 
 public class CollectionTestSuite {
-	ArrayList<Integer> testEvenList = new ArrayList<Integer>();
+	ArrayList<Integer> inputList = new ArrayList<Integer>();
+	ArrayList<Integer> outputList = new ArrayList<Integer>();
+	ArrayList<Integer> expectedList = new ArrayList<Integer>();
 
 	@Before
 	public void startTest() {
@@ -16,7 +19,7 @@ public class CollectionTestSuite {
 
 	@After
 	public void endTest() {
-		System.out.println("-- Test case ended --");
+		System.out.println("-- Test case end --");
 	}
 
 	@Test
@@ -24,36 +27,25 @@ public class CollectionTestSuite {
 		//Given
 		OddNumbersExterminator testCase1List = new OddNumbersExterminator();
 		//When
-		ArrayList<Integer> testList1 = new ArrayList<Integer>();
-		testEvenList = testCase1List.exterminate(testList1);
+		outputList = testCase1List.exterminate(inputList);
 		//Then
-		for(int testing : testEvenList) {
-			if(testing % 2 == 0) {
-				System.out.println("Test 1 passed");
-			} else {
-				System.out.println("Error! Test 1 failed");
-			}
-		}
+		Assert.assertEquals(expectedList, outputList);
 	}
 	@Test
 	public void testOddNumbersExterminatorNormalList() {
 		//Given
 		OddNumbersExterminator testCase2List = new OddNumbersExterminator();
+		inputList.add(1);
+		inputList.add(15);
+		inputList.add(22);
+		inputList.add(4);
+		inputList.add(7);
+		expectedList.add(22);
+		expectedList.add(4);
 		//When
-		ArrayList<Integer> testList2 = new ArrayList<Integer>();
-		int i = 0;
-		while (i < 10) {
-			testList2.add(i);
-			i++;
-		}
-		testEvenList = testCase2List.exterminate(testList2);
+		outputList = testCase2List.exterminate(inputList);
 		//Then
-		for(int testing : testEvenList) {
-			if(testing % 2 == 0) {
-				System.out.println("Test 2 passed");
-			} else {
-				System.out.println("Error! Test 2 failed");
-			}
-		}
+		Assert.assertEquals(expectedList, outputList);
+
 	}
 }

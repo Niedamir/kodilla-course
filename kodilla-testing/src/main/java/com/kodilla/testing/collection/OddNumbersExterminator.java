@@ -4,13 +4,20 @@ import java.util.*;
 
 class OddNumbersExterminator {
 	private int i = 0;
-	ArrayList<Integer> numbers = new ArrayList<Integer>();
-	ArrayList<Integer> evenNumbers = new ArrayList<Integer>();
 
-	public ArrayList exterminate(ArrayList<Integer> numbers) {
-		if(i % 2 == 0) {
-			evenNumbers.add(i);
+	public ArrayList exterminate(ArrayList<Integer> list) {
+		//TEST STARTS AND NEVER END
+		while(i < list.size()) {
+			if(list.get(i) % 2 != 0) {
+				list.remove(i);
+			}
 		}
-		return evenNumbers;
+		// NOT WORKING
+		/*for(Integer x : list) {
+			if(x % 2 != 0) {
+				list.remove(x);
+			}
+		}*/
+		return list;
 	}
 }
