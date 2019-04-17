@@ -4,10 +4,12 @@ import java.util.*;
 
 class OddNumbersExterminator {
 	private int i = 0;
+	private int x = 0;
 
 	public ArrayList exterminate(ArrayList<Integer> list) {
 		//TEST STARTS AND NEVER END
-		while(i < list.size()) {
+		x = list.size();
+		while(i < x) {
 			if(list.get(i) % 2 != 0) {
 				list.remove(i);
 			}

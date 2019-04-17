@@ -21,7 +21,7 @@ public class BookLibrary {
 		bookList = resultList;
 		return bookList;
 	}
-	public List<Book> listBooksInHandsOf(LibraryUser libraryUser) {
+	/*public List<Book> listBooksInHandsOf(LibraryUser libraryUser) {
 
-	}
+	}*/
 }
