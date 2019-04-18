@@ -31,7 +31,7 @@ public class CollectionTestSuite {
 		//Then
 		Assert.assertEquals(expectedList, outputList);
 	}
-	@Test
+	/*@Test
 	public void testOddNumbersExterminatorNormalList() {
 		//Given
 		OddNumbersExterminator testCase2List = new OddNumbersExterminator();
@@ -47,5 +47,5 @@ public class CollectionTestSuite {
 		//Then
 		Assert.assertEquals(expectedList, outputList);
 
-	}
+	}*/
 }
