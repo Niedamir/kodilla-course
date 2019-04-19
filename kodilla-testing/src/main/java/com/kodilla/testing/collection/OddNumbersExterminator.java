@@ -9,17 +9,5 @@ class OddNumbersExterminator {
 			if(x % 2 == 0) newList.add(x);
 		}
 		return newList;
-
-		//OLD METHOD - WORKS :)
-		/*
-		int i = 0;
-		int x = list.size();
-		while(i < x) {
-			if(list.get(i) % 2 != 0) {
-				list.remove(i);
-			}
-			i++;
-		}
-		return list; */
 	}
 }
