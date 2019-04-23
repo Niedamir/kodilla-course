@@ -17,7 +17,6 @@ public class StreamMain {
 		result.entrySet().stream()
 			.map(entry -> entry.getKey() + ": " + entry.getValue().toString())
 			.forEach(System.out::println);
-
 	}
 
 	// EXCERCISE 7.1
