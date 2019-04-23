@@ -20,7 +20,7 @@ public class StreamMain {
 
 	}
 
-	// EXCERCISE 7.2
+	// EXCERCISE 7.1
 	/*public static void main(String[] args) {
 		String inputText1 = "Lorem ipsum dolor sit amet";
 		String inputText2 = "consectetur adipiscing elit";
