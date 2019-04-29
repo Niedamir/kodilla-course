@@ -37,6 +37,7 @@ public class WorldTestSuite {
 	@Test
 	public void testGetPeopleQuantity() {
 		//GIVEN
+		generateLists();
 		World world = new World();
 		//WHEN
 		BigDecimal result = world.getPeopleQuantity(continents);
