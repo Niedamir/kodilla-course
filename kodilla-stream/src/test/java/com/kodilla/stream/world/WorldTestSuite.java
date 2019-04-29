@@ -37,9 +37,9 @@ public class WorldTestSuite {
 	@Test
 	public void testGetPeopleQuantity() {
 		//GIVEN
-		World world = new World(continents);
+		World world = new World();
 		//WHEN
-		BigDecimal result = world.getPeopleQuantity();
+		BigDecimal result = world.getPeopleQuantity(continents);
 		//THEN
 		Assert.assertEquals(new BigDecimal("5767773356"), result);
 	}
