@@ -3,6 +3,8 @@ package com.kodilla.stream.array;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.OptionalDouble;
+
 public class ArrayOperationTestSuite {
 
 	@Test
@@ -32,6 +34,6 @@ public class ArrayOperationTestSuite {
 		//WHEN
 		double result = ArrayOperations.getAverage(numbers);
 		//THEN
-		Assert.assertEquals(3.3, result);
+		Assert.assertEquals(3.3, result, 0.1);
 	}
 }
