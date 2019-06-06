@@ -35,4 +35,16 @@ public class Customer {
 	public String getCustomerEMail() {
 		return customerEMail;
 	}
+
+	@Override
+	public String toString() {
+		return "{" +
+			"customerName='" + customerName + '\'' +
+			", customerCity='" + customerCity + '\'' +
+			", customerStreet='" + customerStreet + '\'' +
+			", customerZipCode='" + customerZipCode + '\'' +
+			", customerPhone=" + customerPhone +
+			", customerEMail='" + customerEMail + '\'' +
+			'}';
+	}
 }

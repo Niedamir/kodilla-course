@@ -1,6 +1,7 @@
 package com.kodilla.good.patterns.challenges.submodule2;
 
 import java.util.HashMap;
+import java.util.stream.Collectors;
 
 public class Order {
 	private Customer customer;
@@ -42,9 +43,12 @@ public class Order {
 
 	@Override
 	public String toString() {
+		String mapAsString = productList.entrySet().stream()
+			.map(key -> key + "=" + productList.get(key))
+			.collect(Collectors.joining(", ", "{", "}"));
 		return "Order{" +
-			"customer=" + customer +
-			"\n productList=" + productList +
+			"customer=" + customer.toString() +
+			"\n productList=" + mapAsString +
 			"\n delivery='" + delivery + '\'' +
 			"\n toPay=" + toPay +
 			'}';
