@@ -25,5 +25,10 @@ public class Product {
 	public double getProductPrice() {
 		return productPrice;
 	}
+
+	@Override
+	public String toString() {
+		return "Product{" + "productName='" + productName + '\'' + ", productCategory='" + productCategory + '\'' + ", productID=" + productID + ", productPrice=" + productPrice + '}';
+	}
 }
 
