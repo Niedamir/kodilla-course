@@ -1,10 +1,19 @@
-package main.java.com.kodilla.good.patterns.challenges.food2door;
+package com.kodilla.good.patterns.challenges.food2door;
+
+import java.util.List;
 
 public interface Supplier {
-    void process();
     String getSupplierName();
+    List getProductList();
+
+    default void displayDataBase() {
+        System.out.println("Dostawca: " + getSupplierName());
+        System.out.println(getProductList().toString());
+    }
+
+    void process();
+
     default void submitOrder() {
-        process();
         System.out.println("Zamówienie u dostawcy: " + getSupplierName() + "złożone pomyslnie.");
     }
 }

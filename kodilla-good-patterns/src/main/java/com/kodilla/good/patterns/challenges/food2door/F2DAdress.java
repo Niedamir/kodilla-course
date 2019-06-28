@@ -1,4 +1,4 @@
-package main.java.com.kodilla.good.patterns.challenges.food2door;
+package com.kodilla.good.patterns.challenges.food2door;
 
 public class F2DAdress {
 	private final String adress = "ul. Witolda Pileckiego 13";
