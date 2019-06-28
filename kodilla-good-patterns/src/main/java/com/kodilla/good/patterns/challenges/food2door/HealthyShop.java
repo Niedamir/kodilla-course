@@ -3,7 +3,7 @@ package com.kodilla.good.patterns.challenges.food2door;
 import java.util.ArrayList;
 import java.util.List;
 
-abstract class HealthyShop implements Supplier {
+class HealthyShop implements Supplier {
     private String supplierName = "Healthy Shop";
     private List<Product> productList = new ArrayList<>();
 
@@ -17,6 +17,7 @@ abstract class HealthyShop implements Supplier {
         productList.add(new Product("Masło klarowane 500g", 9.99, 35 ));
         return productList;
     }
+    @Override
     public void process(F2DAdress adress) {
         String orderAdress= adress.getAdress() + " " + adress.getPostCode() + " " + adress.getCity();
         Integer orderNIP = adress.getNIP();

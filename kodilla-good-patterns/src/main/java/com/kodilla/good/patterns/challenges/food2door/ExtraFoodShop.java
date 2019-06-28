@@ -19,6 +19,7 @@ public class ExtraFoodShop implements Supplier {
         return productList;
     }
 
+    @Override
     public void process(F2DAdress adress) {
         String orderStreet = adress.getAdress();
         String orderPostCode = adress.getPostCode() + " " + adress.getCity();
@@ -27,5 +28,6 @@ public class ExtraFoodShop implements Supplier {
         System.out.println("Zamówienie zostanie wysłane na adres: " + orderStreet + " " + orderPostCode);
         System.out.println("Email z potwierdzeniem wysłania zamówienia zostanie wysłany na adres: " + orderConfirmationEmail);
     }
+
 
 }

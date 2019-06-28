@@ -11,9 +11,9 @@ public interface Supplier {
         System.out.println(getProductList().toString());
     }
 
-    void process();
+    void process(F2DAdress adress);
 
     default void submitOrder() {
-        System.out.println("Zamówienie u dostawcy: " + getSupplierName() + "złożone pomyslnie.");
+        System.out.println("Zamówienie u dostawcy: " + getSupplierName() + " złożone pomyslnie.");
     }
 }

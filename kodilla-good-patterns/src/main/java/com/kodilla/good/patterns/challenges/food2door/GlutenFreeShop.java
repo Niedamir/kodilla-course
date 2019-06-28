@@ -3,7 +3,7 @@ package com.kodilla.good.patterns.challenges.food2door;
 import java.util.ArrayList;
 import java.util.List;
 
-abstract class GlutenFreeShop implements Supplier {
+class GlutenFreeShop implements Supplier {
     private String supplierName = "Gluten Free Shop";
     private List<Product> productList = new ArrayList<>();
 
@@ -17,7 +17,9 @@ abstract class GlutenFreeShop implements Supplier {
         productList.add(new Product("Makaron z grochu 1kg", 6.99, 12 ));
         return productList;
     }
-    void process(F2DAdress adress) {
+
+    @Override
+    public void process(F2DAdress adress) {
         String orderStreet = adress.getAdress();
         String orderPostCode = adress.getPostCode();
         String orderCity = adress.getCity();
