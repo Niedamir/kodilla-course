@@ -1,4 +1,6 @@
-package main.java.com.kodilla.good.patterns.challenges.flightService;
+package com.kodilla.good.patterns.challenges.flightService;
+
+import java.util.Objects;
 
 public class Flight {
     private String startingAirport;
@@ -28,5 +30,18 @@ public class Flight {
                 ", destinationAirport='" + destinationAirport + '\'' +
                 ", transferAirport='" + transferAirport + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if(this == o) return true;
+        if(o == null || getClass() != o.getClass()) return false;
+        Flight flight = (Flight) o;
+        return startingAirport.equals(flight.startingAirport) && destinationAirport.equals(flight.destinationAirport) && transferAirport.equals(flight.transferAirport);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(startingAirport, destinationAirport, transferAirport);
     }
 }

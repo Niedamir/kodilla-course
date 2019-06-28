@@ -1,4 +1,4 @@
-package main.java.com.kodilla.good.patterns.challenges.flightService;
+package com.kodilla.good.patterns.challenges.flightService;
 
 import java.util.stream.Collectors;
 

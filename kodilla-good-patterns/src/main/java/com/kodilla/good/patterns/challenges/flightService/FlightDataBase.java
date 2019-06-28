@@ -1,4 +1,4 @@
-package main.java.com.kodilla.good.patterns.challenges.flightService;
+package com.kodilla.good.patterns.challenges.flightService;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,18 +6,6 @@ import java.util.Objects;
 
 public class FlightDataBase {
     Map<Integer, Flight> dataBase = new HashMap<>();
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        FlightDataBase that = (FlightDataBase) o;
-        return Objects.equals(dataBase, that.dataBase);
-    }
-    @Override
-    public int hashCode() {
-        return Objects.hash(dataBase);
-    }
 
     void initializeDataBase() {
         dataBase.put(0, new Flight("Sun Spear", "Winterfell", "King's landing"));

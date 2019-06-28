@@ -1,4 +1,4 @@
-package main.java.com.kodilla.good.patterns.challenges.flightService;
+package com.kodilla.good.patterns.challenges.flightService;
 
 public class FlightServiceMain {
     public static void main(String[] args) {
