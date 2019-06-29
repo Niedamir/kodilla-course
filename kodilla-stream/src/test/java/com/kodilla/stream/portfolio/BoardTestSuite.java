@@ -81,16 +81,16 @@ public class BoardTestSuite {
 
 	@Test
 	public void testAddTaskListAverageWorkingOnTask() {
-		//Given
-		Board project = prepareTestData();
-		//When
-		List<TaskList> inProgressTasks = new ArrayList<>();
-		inProgressTasks.add(new TaskList("In progress"));
-		long longTasks = project.getTaskLists().stream()
-			.filter(inProgressTasks::contains)
-			.flatMap(tl -> tl.getTasks().stream())
-			.map(t -> )
-		//Then
+//		//Given
+//		Board project = prepareTestData();
+//		//When
+//		List<TaskList> inProgressTasks = new ArrayList<>();
+//		inProgressTasks.add(new TaskList("In progress"));
+//		long longTasks = project.getTaskLists().stream()
+//			.filter(inProgressTasks::contains)
+//			.flatMap(tl -> tl.getTasks().stream())
+//			.map(t -> )
+//		//Then
 
 	}
 }
