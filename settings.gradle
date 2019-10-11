@@ -18,4 +18,4 @@ include 'kodilla-stream'
 include 'kodilla-exception'
 include 'kodilla-spring'
 include 'kodilla-patterns2'
-
+include 'kodilla-hibernate'
