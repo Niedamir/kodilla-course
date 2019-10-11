@@ -26,6 +26,7 @@ public class PizzaOrderTestSuite {
 		//Then
 		Assert.assertEquals(19.5, theCost, 0);
 	}
+
 	@Test
 	public void testPizzaWithAll() {
 		//Given

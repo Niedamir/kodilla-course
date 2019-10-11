@@ -19,3 +19,6 @@ include 'kodilla-exception'
 include 'kodilla-spring'
 include 'kodilla-patterns2'
 include 'kodilla-hibernate'
+include 'kodilla-pattern22'
+include 'kodilla-patterns2'
+

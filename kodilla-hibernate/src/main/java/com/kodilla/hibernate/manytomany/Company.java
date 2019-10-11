@@ -1,9 +1,6 @@
 package com.kodilla.hibernate.manytomany;
 
-import com.sun.istack.internal.NotNull;
-
 import javax.persistence.*;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
