@@ -10,6 +10,7 @@ public class Order {
 	private Double toPay;
 	private boolean isPrepared = false;
 
+	public Order() { }
 	public Order(Customer customer, HashMap<Product, Integer> productList, String delivery) {
 		this.customer = customer;
 		this.productList = productList;
