@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HomeworkList implements Observable {
-	private List<Observer> observers;
+	private List<Observer> observers = new ArrayList<>();
 	private List<String> homeworkList;
 
 	public HomeworkList() {
