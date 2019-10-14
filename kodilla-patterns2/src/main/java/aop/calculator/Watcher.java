@@ -13,7 +13,7 @@ import java.math.BigDecimal;
 public class Watcher {
 	public static final Logger LOGGER = LoggerFactory.getLogger(Watcher.class);
 
-	@Before("execution(* com.kodilla.patterns2.aop.calculator.Calculator.factorial(..))" +
+	@Before("execution(* aop.calculator.Calculator.factorial(..))" +
 		"^^ args(theNumber) && target(object)")
 	public void LogEvent(BigDecimal theNumber, Object object) {
 		LOGGER.info("Class: " + object.getClass().getName() + ", Args: " + theNumber);
