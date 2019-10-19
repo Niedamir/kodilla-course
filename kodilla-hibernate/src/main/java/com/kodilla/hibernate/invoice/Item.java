@@ -64,7 +64,7 @@ public class Item {
 	}
 
 	@ManyToOne
-	@JoinColumn (name = "ITEM")
+	@JoinColumn (name = "INVOICE")
 	public Invoice getInvoice() {
 		return invoice;
 	}

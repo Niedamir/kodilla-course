@@ -1,5 +1,7 @@
 package com.kodilla.hibernate.manytomany;
 
+import org.springframework.context.annotation.Bean;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;

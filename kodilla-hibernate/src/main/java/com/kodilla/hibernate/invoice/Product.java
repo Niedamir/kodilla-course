@@ -31,7 +31,8 @@ public class Product {
 	private void setName(String name) {
 		this.name = name;
 	}
-
+	@OneToOne (cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	@JoinColumn (name = "ITEMS")
 	public Item getItem() {
 		return item;
 	}
