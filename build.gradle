@@ -21,5 +21,7 @@ dependencies {
 	testCompile group: 'org.mockito', name: 'mockito-core', version: '2.10.0'
 	testCompile('junit:junit:4.12')
 	testCompile('org.mockito:mockito-all:1.10.19')
-    implementation 'junit:junit:4.12'
+	implementation 'junit:junit:4.12'
+	// https://mvnrepository.com/artifact/mysql/mysql-connector-java
+	compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.18'
 }

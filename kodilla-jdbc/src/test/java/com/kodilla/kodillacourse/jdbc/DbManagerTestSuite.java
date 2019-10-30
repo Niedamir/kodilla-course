@@ -1,4 +1,4 @@
-package com.kodilla.jdbc;
+package com.kodilla.kodillacourse.jdbc;
 
 import org.junit.Assert;
 import org.junit.Test;
