@@ -8,7 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BoardTestSuite {
-	public Board prepareTestData() {//users
+	public Board prepareTestData() {
+		//users
 		User user1 = new User("developer1", "John Smith");
 		User user2 = new User("projectmanager1", "Nina White");
 		User user3 = new User("developer2", "Emilia Stephanson");
@@ -69,18 +70,8 @@ public class BoardTestSuite {
 		return project;
 	}
 
-	@Test
-	public void testAddTaskList() {
-		//Given
-		Board project = prepareTestData();
-		//When
-
-		//Then
-		Assert.assertEquals(3, project.getTaskLists().size());
-	}
-
-	@Test
-	public void testAddTaskListAverageWorkingOnTask() {
+//	@Test
+//	public void testAddTaskListAverageWorkingOnTask() {
 //		//Given
 //		Board project = prepareTestData();
 //		//When
@@ -89,8 +80,9 @@ public class BoardTestSuite {
 //		long longTasks = project.getTaskLists().stream()
 //			.filter(inProgressTasks::contains)
 //			.flatMap(tl -> tl.getTasks().stream())
-//			.map(t -> )
+//			.flatMapToLong(t -> t.getCreated())
+//			.average();
 //		//Then
-
-	}
+//			Assert.assertEquals(0, longTasks);
+//	}
 }
